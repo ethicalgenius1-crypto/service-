@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta price="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ezii World</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+      body {
+        background-color:yellow;
+      }
+      .navbar {
+        position: sticky;
+        top: 0;
+      }
+      .nav-item a{
+        color: green;
+      }
+      .picture img {
+        margin-left: 10px;
+      }
+      .first-img {
+        animation: first-img 2s infinite;
+      }
+        .navbar-nav li{
+            margin-left: 30px;
+        }
+        .products-container {
+          flex-wrap: wrap;
+          display: flex;
+          justify-content: center;
+        }
+        .products {
+          border-top-left-radius: 20px;
+          border-bottom-right-radius: 20px;
+        }
+        .button-container button {
+          display: block;
+          border-radius: 10px;
+          border: none;
+          padding: 10px;
+        }
+        .button-container button a {
+          color: green;
+          font-size: 13px;
+          text-decoration: none;
+          transition: 1s;
+        }
+        .button-container button:hover {
+          transform: scale(1.1);
+        }
+        .product-price {
+          margin-top: 50px;
+        }
+        .product-name {
+          margin-left: 20px;
+        }
+        .first-footer-div {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .footer-items {
+            margin-left: 40px;
+            margin-top: 20px;
+          }
+          .footer-items a:hover {
+            border-bottom: 1px solid yellow;
+          }
+          .footer-items a {
+            margin-left: 20px;
+            text-decoration: none;
+          }
+          .social-media {
+            list-style: none;
+            padding: 5px;
+            transition: 1s;
+          }
+          .footer-navbar {
+            margin-left: 20px;
+          }
+          .media {
+            margin-left: 120px;
+            margin-top: 20px;
+          }
+          .social-media:hover {
+            transform: scale(1.1);            
+          }
+          .footer-nav {
+            margin-top: 20px;
+          }
+          .social-media img {
+            border-radius: 50%;
+          }
+          .social-media a {
+            text-decoration: none;
+            color: green;
+          }
+          @keyframes first-img{
+            from {
+              opacity: 0;
+            }
+            to {
+              opacity: 1;
+            }
+          }
+          @media (width <= 420px) {
+            .footer-items {
+              margin-left: 0px;
+              /* display: block; */
+            }
+          }
+    </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
+      <div class="container">
+          <div class="picture d-flex">
+              <img class="first-img" src="c:\Users\ethic\.vscode\one-drive-paste\ethical-pictures\geniue-brand-logo.webp" height="60" width="60" alt="">
+              <img src="./bootstrp-example-2-pictures/header-picture.jpeg" height="60" width="60" alt="">
+              <div class="ezii border bg-light p-1 border-success border-3 m-2 text-success">Ezii Beauty World</div>
+          </div>
+        <button class="navbar-toggler"type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms -auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Book Apointment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Hairstyles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section>
+      <article class="products-container d-flex">
+        <div class=" products m-2 p-2 bg-success">
+          <p class="product-name text-warning">Indian Style</p>
+          <div class="img-container d-flex p-1">
+            <img src="./bootstrp-example-2-pictures/hair-1.jpeg" height="150" width="150" alt="">
+            <p class="product-price p-2 text-warning">$5</p>
+          </div>
+          <div class="button-container">
+            <button class="item p-1 m-2"><a href="">Shop Now</a></button>
+            <button class="item p-1 m-2"><a href="">Book Appointment</a></button>
+          </div>
+        </div>
+        <div class="products m-2 p-1 bg-success">
+          <p class="product-name text-warning">pinterest</p>
+          <div class="img-container d-flex p-1">
+            <img src="./bootstrp-example-2-pictures/hair-2.png" height="150" width="150" alt="">
+            <p class=" product-price p-2 text-warning">$8</p>
+          </div>
+          <div class="button-container">
+            <button class="item p-1 m-2"><a href="">Shop Now</a></button>
+            <button class="item p-1 m-2"><a href="">Book Appointment</a></button>
+          </div>
+        </div>
+        <div class="products m-2 p-1 bg-success">
+          <p class="product-name text-warning">pinterest</p>
+          <div class="img-container d-flex p-1">
+            <img src="./bootstrp-example-2-pictures/hair-3.jpeg" height="150" width="150" alt="">
+            <p class="product-price p-2 text-warning">$8</p>
+          </div>
+          <div class="button-container">
+            <button class="item p-1 m-2"><a href="">Shop Now</a></button>
+            <button class="item p-1 m-2"><a href="">Book Appointment</a></button>
+          </div>
+        </div>
+        <div class="products m-2 p-1 bg-success">
+          <p class="product-name text-warning">designed</p>
+          <div class="img-container d-flex p-1">
+            <img src="./bootstrp-example-2-pictures/nail-2.jpeg" height="150" width="150" alt="">
+            <p class="product-price p-2 text-warning">$5</p>
+          </div>
+          <div class="button-container">
+            <button class="item p-1 m-2"><a href="">Shop Now</a></button>
+            <button class="item p-1 m-2"><a href="">Book Appointment</a></button>
+          </div>
+        </div>
+      </article>
+      <article class=" products-container d-flex">
+        <div class=" products m-2 p-2 bg-success">
+          <p class="product-name text-warning">colours</p>
+          <div class="img-container d-flex p-1">
+            <img src="./bootstrp-example-2-pictures/nail-3.jpeg" height="150" width="150" alt="">
+            <p class="product-price p-2 text-warning">$5</p>
+          </div>
+          <div class="button-container">
+            <button class="item p-1 m-2"><a href="">Shop Now</a></button>
+            <button class="item p-1 m-2"><a href="">Book Appointment</a></button>
+          </div>
+        </div>
+        <div class="products m-2 p-1 bg-success">
+          <p class="product-name text-warning">long one colour</p>
+          <div class="img-container d-flex p-1">
+            <img src="./bootstrp-example-2-pictures/nail-4.jpeg" height="150" width="150" alt="">
+            <p class=" product-price p-2 text-warning">$5</p>
+          </div>
+          <div class="button-container">
+            <button class="item p-1 m-2"><a href="">Shop Now</a></button>
+            <button class="item p-1 m-2"><a href="">Book Appointment</a></button>
+          </div>
+        </div>
+        <div class="products m-2 p-1 bg-success">
+          <p class="product-name text-warning">pinterest</p>
+          <div class="img-container d-flex p-1">
+            <img src="./bootstrp-example-2-pictures/hair-4.jpeg" height="150" width="150" alt="">
+            <p class="product-price p-2 text-warning">$12</p>
+          </div>
+          <div class="button-container">
+            <button class="item p-1 m-2"><a href="">Shop Now</a></button>
+            <button class="item p-1 m-2"><a href="">Book Appointment</a></button>
+          </div>
+        </div>
+        <div class="products m-2 p-1 bg-success">
+          <p class="product-name text-warning">pinterest</p>
+          <div class="img-container d-flex p-1">
+            <img src="./bootstrp-example-2-pictures/hair-5.jpeg" height="150" width="150" alt="">
+            <p class="product-price p-2 text-warning">$10</p>
+          </div>
+          <div class="button-container">
+            <button class="item p-1 m-2"><a href="">Shop Now</a></button>
+            <button class="item p-1 m-2"><a href="">Book Appointment</a></button>
+          </div>
+        </div>
+      </article>
+    </section>
+    
+    <footer class="bg-dark text-white p-4">
+      <div class="first-footer-div">
+        <div class="second-footer-div">
+          <h5 class="text-success">Ezii Beauty World</h5>
+
+        <p class="text-success">Your beauty is our priority</p>
+
+        <p class="text-success">📍 21 Clef Avenue Bishop's Court, Owerri, Imo State</p>
+
+        <p class="text-success">📞 +2349153442290</p>
+
+        <p class="text-success">💬 WhatsApp: 708 085 5527</p>
+
+        <p class="text-success">✉️ eziibeauty@example.com</p>
+        </div>
+        <div class="footer-items">
+          <a class="text-success" href="#">Home</a>
+          <a class="text-success" href="#">Hairstyles</a>
+          <a class="text-success" href="#">Pricing</a>
+          <a class="text-success" href="#">Gallery</a>
+          <a class="text-success" href="#">Contact</a>
+        </div>
+        <nav class="footer-navbar">
+          <h5 class="media text-success">Media</h5>
+          <div class="footer-nav d-flex">
+            <ul class="media-1">
+                <li class="social-media text-success">
+                  <img src="./bootstrp-example-2-pictures/whatsapp-icon.jpeg" height="30" width="30" alt="">
+                  <a href="">Whatsapp</a>
+                </li>
+                <li class="social-media text-success">
+                  <img src="./bootstrp-example-2-pictures/facebook-icon.jpeg" height="30" width="30" alt="">
+                  <a href="">Facebook</a>
+                </li>
+                <li class="social-media text-success">
+                  <img src="./bootstrp-example-2-pictures/instagram-icon.jpeg" height="30" width="30" alt="">
+                  <a href="">Instagram</a>
+                </li>
+                <li class="social-media text-success">
+                  <img src="./bootstrp-example-2-pictures/snapchat-icon.jpeg" height="30" width="30" alt="">
+                  <a href="">Snapchat</a>
+                </li>
+              </ul>
+              <ul class="media-1">
+              <li class="social-media text-success">
+                <img src="./bootstrp-example-2-pictures/linkdin-icon.jpeg" height="30" width="30" alt="">
+                <a href="">Linkdin</a>
+              </li>
+              <li class="social-media text-success">
+                <img src="./bootstrp-example-2-pictures/youtube-icon.jpeg" height="30" width="30" alt="">
+                <a href="">Youtube</a>
+              </li>
+              <li class="social-media text-success">
+                <img src="./bootstrp-example-2-pictures/telegram-icon.jpeg" height="30" width="30" alt="">
+                <a href="">Telegram</a>
+              </li>
+              <li class="social-media text-success">
+                <img src="./bootstrp-example-2-pictures/tiktok-icon.jpeg" height="30" width="30" alt="">
+                <a href="">tiktok</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <hr>
+
+
+      <p class="text-success">© 2026 Ezii Beauty World. All rights reserved.</p>
+      <hr>
+
+
+
+    </footer>
+
+
+  </div>
+
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+
+</body>
+</html
